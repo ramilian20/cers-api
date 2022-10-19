@@ -56,13 +56,13 @@
         const id = btnEliminar.dataset.id;
         console.log("id", id);
         try {
-          const data = await fetch(`/api/inscritosweb/${id}`, {
+          const data = await fetch(`/inscritosweb/${id}`, {
             method: "delete",
           });
           const res = await data.json();
           console.log(res);
           if (res.estado) {
-            window.location.href = "/api/inscritosweb";
+            window.location.href = "/inscritosweb";
           } else {
             console.log(res);
           }
