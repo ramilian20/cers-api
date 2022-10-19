@@ -13,7 +13,7 @@ class Server {
       usuarios: "/api/usuarios",
       auth: "/api/auth",
       categories: "/api/categories",
-      principal: "/api/principal",
+      principal: "/index",
       inscripcionesweb: "/api/inscripcionesweb",
       identificacion: "/api/identificacion",
       plataforma: "/api/plataforma",
@@ -82,7 +82,7 @@ class Server {
     this.app.use(this.paths.auth, require("./routes/auth.router"));
     this.app.use(this.paths.usuarios, require("./routes/user.routes"));
     this.app.use(this.paths.categories, require("./routes/categories.router"));
-    this.app.use(this.paths.principal, require("./routes/principal.router"));
+    this.app.use(this.paths.principal, require("./routes/index.router"));
     this.app.use(
       this.paths.inscripcionesweb,
       require("./routes/inscripcionesweb.router")
