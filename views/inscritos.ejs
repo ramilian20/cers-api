@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tablas.css" />
+    <title>inscritos</title>
+  </head>
+  <body>
+    <section class="fondo">
+      <h1>Esta seccion es donde veremos los inscritos en el sistema</h1>
+    </section>
+    <section class="contactos" id="formularios">
+      <table class="pedidos">
+        <thead>
+          <tr>
+            <th>Identificacion</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Programa</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (arrayInscritos.length > 0) { %> <%
+          arrayInscritos.forEach(inscritos => { %>
+          <tr>
+            <td><%= inscritos.identificacion %></td>
+            <td><%= inscritos.nombre %></td>
+            <td><%= inscritos.apellido %></td>
+            <td><%= inscritos.programa %></td>
+            <td><%= inscritos.telefono %></td>
+            <td><%= inscritos.correo %></td>
+            <td>accion</td>
+          </tr>
+          <% }) %> <% } %>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

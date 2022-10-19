@@ -1,0 +1,889 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+  margin: 0;  
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+
+.img-bienvenido{
+ background: url('../img/BIENVENIDA.png') no-repeat;
+ background-position: center;
+ background-size: cover;
+ width: 100%;
+ height: 300px;
+
+ 
+}
+
+.boton{ 
+    text-align: center;
+    width: 500px;
+}
+.boton .btn{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: #fff;
+    background: blueviolet;
+}
+
+ .boton .btn:hover{
+    background: rgb(98, 28, 163);
+}
+
+.color-acento{
+    color: blueviolet;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.img-arriba{
+    height: 150px;
+    width: 100%;
+
+
+}
+
+.header{
+    background: blueviolet;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+ .header .logo{
+      margin: 0;
+      padding: 0px 30px;
+      
+
+}
+
+ .header .container{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+ .header .nav{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    text-align: right;
+    padding-left: 80px;
+}
+
+
+ul,ol{
+    list-style: none;
+}
+
+.nav-hijo li a{
+       background: yellow;    
+       color: black;
+       text-decoration: none;
+       padding: 5px 10px;
+       display: block;
+       font-size: 15px;
+       
+
+
+}
+
+.nav-hijo > li{
+        float: left;
+}
+
+.nav-hijo li a:hover{
+    background:whitesmoke;
+}
+
+.nav-hijo li ul{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+
+}
+
+.nav-hijo li:hover > ul{
+      display: block;
+     
+}
+
+.nav-hijo li ul li{
+    position: relative;
+    top: 0;
+}
+
+.nav-hijo li ul li ul{
+    right: -210px;
+    top: 0;
+    width: 200px;
+}
+
+.somos-proya .container{
+    text-align: center;
+    padding:0;
+}
+
+
+.nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nuestros-programas .container{
+      padding: 100px 12px;
+     
+}
+
+.nuestros-programas h2{
+    margin-top: 0;
+    font-size: 1.5em;
+    color: blueviolet;
+}
+
+
+.nuestros-programas p{
+    display: none;
+    font: .5rem;
+    background: rgba(0,0,0,0.5);
+    display: block;
+    margin-bottom: 30px;
+    
+}
+
+.nuestros-programas .carta-uno{
+    background: url("../cursos/secretaria.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-uno h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.2);
+}
+
+.nuestros-programas .carta-dos{
+    background: url("../cursos/auxiliaradmin.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-dos h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-tres{
+    background: url("../cursos/administracionyfinansas.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-tres h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-cuatro{
+    background: url("../cursos/seguridad.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-cuatro h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-cinco{
+    background: url("../cursos/programacion.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-cinco h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-seis{
+    background: url("../cursos/asistentetegnologia.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-seis h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-siete{
+    background: url("../cursos/mantenimientoelectronico.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-siete h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-ocho{
+    background: url("../cursos/mercaderistas.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+
+}
+
+.nuestros-programas .carta-ocho h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-nueve{
+    background: url("../cursos/peluqueria.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-nueve h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-dies{
+    background: url("../cursos/moda.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-dies h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-once{
+    background: url("../cursos/mecanica.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-once h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-doce{
+    background: url("../cursos/refrigeracion.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-doce h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-trece{
+    background: url("../cursos/electrisista.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-trece h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-catorce{
+    background: url("../cursos/farmacia.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-catorce h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-quince{
+    background: url("../cursos/preescolar.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-quince h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.nuestros-programas .carta-dieciseis{
+    background: url("../cursos/agropecuario.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+
+}
+
+.nuestros-programas .carta-dieciseis h3{
+    font-size: 1rem;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+
+.cursos-cortos .somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.cursos-cortos .somos-proya .container h1{
+    font-size: 2rem;
+
+}
+
+.cursos-cortos .somos-proya .container p{
+    font-size: 1.5rem;
+}
+
+.diplomados .somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+    width: 100%;
+    margin-top: 10px;
+    background: rgb(30,30,30);
+}
+
+
+.diplomados .somos-proya .container h1{
+    font-size: 2rem;
+
+}
+
+.diplomados .somos-proya .container p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.seminarios .somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+    width: 100%;
+    margin-top: 10px;
+    background: rgb(30,30,30);
+}
+
+
+.seminarios .somos-proya .container h1{
+    font-size: 2rem;
+
+}
+
+.seminarios .somos-proya .container p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.convenios .container{
+        padding: 100px 12px;
+        text-align: center;
+
+  }
+
+.convenios .cartaunoo{
+    padding: 10px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 220px;
+    border: #fff 1px solid;
+    
+  
+}
+
+.convenios .cartadoss{
+      padding: 10px 0px;
+      margin: 10px;
+      border-radius: 15px;
+      width: 220px;
+      border: #fff 1px solid;
+    
+  }
+
+  .convenios .cartatress{
+      padding: 10px 0px;
+      margin: 10px;
+      border-radius: 15px;
+      width: 220px;
+      border: #fff 1px solid;
+    
+  }
+
+  .convenios .cartacuatroo{
+      padding: 10px 0px;
+      margin: 10px;
+      border-radius: 15px;
+      width: 800px;
+      height: 800px;
+      border: #fff 1px solid;
+    
+  }
+
+
+
+
+
+
+.bienestar{
+    background-color: whitesmoke;
+    color: white;
+    text-align: center; 
+}
+.bienestar .container{
+    padding: 100px 12px;
+}
+
+.bienestar h2{
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+.bienestar h3{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.bienestar p{
+    font-size: 1rem;
+    color: black;
+}
+
+.bienestar .carta{
+    text-align: center;
+}
+
+.bienestar .boton{
+    align-items: center center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.contacto{
+    background-color: rgba(0,0,0,0.2);
+    text-align: center; 
+}
+
+.contacto .container{
+    padding: 100px 12px;
+}
+
+.contacto h3{
+    color: blueviolet;
+    font-size: 1.5rem;
+}
+
+.contacto p{
+    font-size: 1rem;
+}
+
+.cabecera-usuarios{
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera-usuarios .header{
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    padding: 0;
+}
+
+.cabecera-usuarios .header img{
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 100%;
+
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+.titulo{
+    color: yellow;
+    font-size: 2rem;
+}
+
+.parrafo-form{
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 20px;
+    color: white;
+}
+
+.targeta-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.targeta-form .cabecera-targeta{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;    
+    width: 100%;
+}
+
+.form label{
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.form .form-input{
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 0px;
+}
+
+.form .bton{
+    margin-top: 10px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background: linear-gradient(rgba(255, 255, 0, 0.548), rgb(255, 251, 0)60%);
+}
+
+.form .bton:hover{
+    background: greenyellow;
+}
+
+.atras{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.atras .botom{
+    background: linear-gradient(rgba(255, 0, 0, 0.61), rgb(255, 0, 0)70%);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2rem;
+    padding: 5px opx;
+    width: 200px;
+    height: 40px;
+}
+
+.atras .botom:hover{
+    background: linear-gradient(red 50%, orange);
+}
+
+
+.footer{
+    padding-top: 2rem;
+    background: rgb(137, 0, 250);
+    text-align: center;
+}
+
+.footer .caja-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .caja-contenedor .caja{
+    flex: 1 1 16rem;
+    margin: 20px;
+}
+
+.footer .caja-contenedor .caja h3{
+    font-size: 1.2rem;
+    padding: 20px 0;
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.footer .caja-contenedor .caja p{
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: black;
+}
+
+.footer .caja-contenedor .caja a{
+    display: block;
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: black;
+}
+
+.footer .caja-contenedor .caja a:hover{
+    text-decoration: underline;
+}
+
+.footer .caja-contenedor .caja .info{
+    display: flex;
+    align-items: center;
+}
+
+.footer .caja-contenedor .caja .info i{
+    margin: .5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background: whitesmoke;
+    color: var(--limon);
+    font-size: 1.8rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.footer .creditos{
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: black;
+    border-top: 2px solid wheat;
+    padding: 10pxrem 5px;
+    text-align: center;
+}
+
+.admin{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    letter-spacing: .1rem;
+    align-items: center;
+    margin-left: 50px;
+ 
+}
+
+
+
+@media(max-width: 700px){
+    .formulario{
+        width: 100%;
+    }
+
+    .targeta-form{
+        width: 90%;
+    }
+
+    .targeta-form .cabecera-targeta{
+        width: 90%;
+    }
+}
+
+@media(min-width: 720px){
+
+
+    
+
+   
+   
+
+       /*.img_contenedor{
+        background-image: linear-gradient(
+            0deg
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("/practica/img/somos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }*/
+
+    .nuestros-programas .programas-container{
+        display: flex;
+         justify-content: center;
+         text-align: center;
+
+        
+    }
+
+  
+
+    .nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+     
+    .nuestros-programas h3{
+        margin-top: 0;
+    }
+    
+     
+   
+
+}
+
+    

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tablas.css" />
+    <title>inscritos web</title>
+  </head>
+  <body>
+    <section class="fondo">
+      <h1>Esta seccion es donde veremos los inscritos en la web</h1>
+    </section>
+    <section class="contactos" id="formularios">
+      <table class="pedidos">
+        <thead>
+          <tr>
+            <th>Identificacion</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Programa</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (arrayInscritosweb.length > 0) { %> <%
+          arrayInscritosweb.forEach(inscritosweb => { %>
+          <tr>
+            <td><%= inscritosweb.identificacion %></td>
+            <td><%= inscritosweb.nombre %></td>
+            <td><%= inscritosweb.apellido %></td>
+            <td><%= inscritosweb.programa %></td>
+            <td><%= inscritosweb.telefono %></td>
+            <td><%= inscritosweb.correo %></td>
+            <td>
+              <button
+                class="boton-eliminar"
+                id="btnEliminar"
+                data-id="<%= inscritosweb.id %>"
+              >
+                Eliminar
+              </button>
+            </td>
+          </tr>
+          <% }) %> <% } %>
+        </tbody>
+      </table>
+    </section>
+
+    <script>
+      const btnEliminar = document.querySelector("#btnEliminar");
+      btnEliminar.addEventListener("click", async () => {
+        console.log("me diste click");
+        const id = btnEliminar.dataset.id;
+        console.log("id", id);
+        try {
+          const data = await fetch(`/api/inscritosweb/${id}`, {
+            method: "delete",
+          });
+          const res = await data.json();
+          console.log(res);
+          if (res.estado) {
+            window.location.href = "/api/inscritosweb";
+          } else {
+            console.log(res);
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      });
+    </script>
+  </body>
+</html>

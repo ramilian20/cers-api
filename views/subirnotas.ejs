@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/usuarios.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Subir notas</title>
+  </head>
+  <body>
+    <section class="cabecera-usuarios">
+      <div class="header">
+        <img src="../img/imagenprincipal.jpeg" />
+      </div>
+    </section>
+
+    <section class="formulario">
+      <div class="targeta-form">
+        <div class="cabecera-targeta">
+          <img src="../img/LOGO.jpg" width="100px" height="100px" />
+        </div>
+        <h1 class="titulo">Formulario de Subir Nota</h1>
+        <div class="form">
+          <form method="POST" class="form">
+            <label>Identificacion</label>
+            <input
+              type="number"
+              class="form-input"
+              id="identificacion"
+              name="identificacion"
+              placeholder="Ingrese la identificacion del Estudiante"
+            />
+            <label>Modulo</label>
+            <input
+              type="text"
+              class="form-input"
+              id="modulo"
+              name="modulo"
+              placeholder="Ingrese nombre del modulo"
+            />
+            <label>Nota</label>
+            <input
+              type="number"
+              class="form-input"
+              id="nota"
+              name="nota"
+              placeholder="Ingrese la nota del estudiante"
+            />
+            <input
+              type="submit"
+              class="btn"
+              id="enviar"
+              name="enviar"
+              value="Subir Nota"
+            />
+          </form>
+        </div>
+        <div class="atras">
+          <button class="boton" onclick="window.location='principal'">
+            Atras
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

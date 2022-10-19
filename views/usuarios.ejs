@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/usuarios.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Usuarios</title>
+  </head>
+  <body>
+    <section class="cabecera-usuarios">
+      <div class="header">
+        <img src="../img/imagenprincipal.jpeg" />
+      </div>
+    </section>
+
+    <section class="formulario">
+      <div class="targeta-form">
+        <div class="cabecera-targeta">
+          <img src="../img/LOGO.jpg" width="100px" height="100px" />
+        </div>
+        <h1 class="titulo">Formulario de Registro de Usuarios</h1>
+        <form method="post">
+          <div class="form">
+            <label>Nombre</label>
+            <input
+              type="text"
+              class="form-input"
+              id="nombre"
+              name="nombre"
+              placeholder="ingrese nombre de usuario"
+            />
+            <label>Correo</label>
+            <input
+              type="email"
+              class="form-input"
+              id="correo"
+              name="correo"
+              placeholder="ingrese su correo"
+            />
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-input"
+              id="contraseña"
+              name="contraseña"
+              placeholder="introdusca su contraseña"
+            />
+            <label>Rol puede ser ADMIN_ROL O USER_ROL</label>
+            <input
+              type="text"
+              class="form-input"
+              id="rol"
+              name="rol"
+              placeholder="ingrese el rol"
+            />
+            <input
+              type="submit"
+              class="btn"
+              id="enviar"
+              name="enviar"
+              value="Registrarse"
+            />
+          </div>
+        </form>
+        <div class="atras">
+          <button class="boton" onclick="window.location='../index.html'">
+            Atras
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

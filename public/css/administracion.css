@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #510086, rgb(93, 2, 179));
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+
+.img-bienvenido {
+  background: url("../img/BIENVENIDA.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.boton {
+  text-align: center;
+  width: 500px;
+}
+.boton .btn {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background: blueviolet;
+}
+
+.boton .btn:hover {
+  background: rgb(98, 28, 163);
+}
+
+.color-acento {
+  color: blueviolet;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.img-arriba {
+  height: 150px;
+  width: 100%;
+}
+
+.header {
+  background: blueviolet;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.header .logo {
+  margin: 0;
+  padding: 0px 30px;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .nav {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+  text-align: right;
+  padding-left: 80px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.nav-hijo li a {
+  background: yellow;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  font-size: 15px;
+}
+
+.nav-hijo > li {
+  float: left;
+}
+
+.nav-hijo li a:hover {
+  background: whitesmoke;
+}
+
+.nav-hijo li ul {
+  display: none;
+  position: absolute;
+  min-width: 250px;
+}
+
+.nav-hijo li:hover > ul {
+  display: block;
+}
+
+.nav-hijo li ul li {
+  position: relative;
+  top: 0;
+}
+
+.nav-hijo li ul li ul {
+  right: -210px;
+  top: 0;
+  width: 200px;
+}
+
+.administracion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.contenedor-administracion {
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.item-administracion {
+  width: 120px;
+  height: 130px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-administracion a {
+  color: white;
+  text-decoration: none;
+}
+
+.item-administracion a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.item-administracion .img {
+  width: 100%;
+  height: 100px;
+}
+
+.item-administracion .img img {
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+}
+.footer {
+  padding-top: 2rem;
+  background: rgb(137, 0, 250);
+  text-align: center;
+}
+
+.footer .caja-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .caja-contenedor .caja {
+  flex: 1 1 16rem;
+  margin: 20px;
+}
+
+.footer .caja-contenedor .caja h3 {
+  font-size: 1.2rem;
+  padding: 20px 0;
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.footer .caja-contenedor .caja p {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: black;
+}
+
+.footer .caja-contenedor .caja a {
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: black;
+}
+
+.footer .caja-contenedor .caja a:hover {
+  text-decoration: underline;
+}
+
+.footer .caja-contenedor .caja .info {
+  display: flex;
+  align-items: center;
+}
+
+.footer .caja-contenedor .caja .info i {
+  margin: 0.5rem 0;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background: whitesmoke;
+  color: var(--limon);
+  font-size: 1.8rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+.footer .creditos {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  color: black;
+  border-top: 2px solid wheat;
+  padding: 10pxrem 5px;
+  text-align: center;
+}
+
+.admin {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  align-items: center;
+  margin-left: 50px;
+}

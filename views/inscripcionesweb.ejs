@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/principal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Inscripciones</title>
+  </head>
+  <body style="background: linear-gradient(to right, #510086, rgb(93, 2, 179))">
+    <header class="header">
+      <div class="arriba">
+        <div class="container">
+          <img src="../img/imagenprincipal.jpeg" alt="" class="img-arriba" />
+        </div>
+      </div>
+      <div class="container">
+        <a href="index" class="logo"
+          ><img src="../img/LOGO.jpg" alt="cers" width="100px" height="40px"
+        /></a>
+        <nav class="nav">
+          <ul class="nav-hijo">
+            <li>
+              <a href="#">INSTITUCION</a>
+              <ul>
+                <li>
+                  <a href="identificacion">IDENTIFICACION INSTITUCIONAL</a>
+                </li>
+                <li><a href="resena">RESEÑA HISTORICA</a></li>
+                <li><a href="plataforma">PLATAFORMA ESTRATEGICA</a></li>
+                <li><a href="proposito">PROPOSITO INSTITUCIONAL</a></li>
+                <li><a href="politicassst">POLITICAS SST</a></li>
+                <li><a href="">ORGANIGRAMA</a></li>
+                <li><a href="">RECURSO TECNICO</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="programas">PROGRAMAS TECNICOS LABORALES</a>
+              <ul>
+                <li>
+                  <a href="">AREA ADMINISTRATIVA</a>
+                  <ul>
+                    <li><a href="secretaria">SECRETARIA GENERAL</a></li>
+                    <li>
+                      <a href="administrativo">AUXILIAR ADMINISTRATIVO</a>
+                    </li>
+                    <li>
+                      <a href="contable">AUXILIAR CONTABLE Y FINANCIERA</a>
+                    </li>
+                    <li>
+                      <a href="seguridad">SEGURIDAD OCUPACIONAL Y LABORAL</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">AREA DE LA TECNOLOGIOA</a>
+                  <ul>
+                    <li>
+                      <a href="sistemas">AUXILIAR EN SISTEMAS INFORMATICOS</a>
+                    </li>
+                    <li>
+                      <a href="asistente"
+                        >ASISTENTE Y SOPORTE DE LA TEGNOLOGIA DE LA
+                        INFORMACION</a
+                      >
+                    </li>
+                    <li>
+                      <a href="mantenimiento"
+                        >MANTENIMIENTO DE EQUIPOS ELECTRONICOS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">AREA DE VENTAS Y SERVICIOS </a>
+                  <ul>
+                    <li>
+                      <a href="mercaderistas">MERCADERISTAS E IMPULSADORES</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">AREA DE OFICIOS Y SERVICIOS</a>
+                  <ul>
+                    <li><a href="peluquero">PELUQUERO ESTILISTA</a></li>
+                    <li>
+                      <a href="cortes">AUXILIAR CORTE Y CONJFECCION DE MODAS</a>
+                    </li>
+                    <li><a href="mecanica">MECANICO DE MOTORES DIESEL</a></li>
+                    <li>
+                      <a href="refrigeracion"
+                        >AIRE ACONDICIONADO Y REFRIGERACION</a
+                      >
+                    </li>
+                    <li>
+                      <a href="electricista"
+                        >ELECTRICISTA DE MONTAJE Y MANTENIMIENTO</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">AREA DE SALUD</a>
+                  <ul>
+                    <li>
+                      <a href="farmacia">AUXILIAR EN SERVICIOS FARMACEUTICOS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">AREA DE EDUCACION</a>
+                  <ul>
+                    <li><a href="preescolar">AUXILIAR DE PREESCOLAR</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">AREA AGROPECUARIA</a>
+                  <ul>
+                    <li><a href="agropecuaria">TRABAJADOR AGROPECUARIO</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="practicas">PRACTICAS</a></li>
+            <li><a href="">NOTAS</a></li>
+            <li><a href="">MANUAL DE CALIDAD</a></li>
+            <li><a href="">MANUAL DE CONVIVENCIA</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="formulario">
+      <div class="targeta-form">
+        <div class="cabecera-targeta">
+          <img src="../img/LOGO.jpg" width="100px" height="100px" />
+        </div>
+        <h1 class="titulo">Formulario de Inscripcion</h1>
+        <p class="parrafo-form">
+          Porfavor ingrese sus datos en el formulario con cuidado para
+          inscribirlo e ingresarlo a la base de datos
+        </p>
+        <div class="form">
+          <form method="POST" class="form">
+            <label>Identificacion</label>
+            <input
+              type="number"
+              class="form-input"
+              id="identificacion"
+              name="identificacion"
+              placeholder="Introdusca su identificacion"
+            />
+            <label>Nombre del Estudiante</label>
+            <input
+              type="text"
+              class="form-input"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+            />
+            <label>Apellido del Estudiante</label>
+            <input
+              type="text"
+              class="form-input"
+              id="apellido"
+              name="apellido"
+              placeholder="Ingrese su apellido"
+            />
+            <label>Programa</label>
+            <input
+              type="text"
+              class="form-input"
+              id="programa"
+              name="programa"
+              placeholder="Porfavor ingrese el programa que desea cursar"
+            />
+            <label>Telefono</label>
+            <input
+              type="number"
+              class="form-input"
+              id="telefono"
+              name="telefono"
+              placeholder="Ingrese su telefono"
+            />
+            <label>Correo</label>
+            <input
+              type="email"
+              class="form-input"
+              id="correo"
+              name="correo"
+              placeholder="Ingrese su email"
+            />
+            <input
+              type="submit"
+              class="bton"
+              id="enviar"
+              name="enviar"
+              value="Inscribir"
+            />
+          </form>
+        </div>
+        <div class="atras">
+          <button class="botom" onclick="window.location='principal'">
+            Atras
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
